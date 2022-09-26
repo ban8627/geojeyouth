@@ -1,0 +1,19 @@
+  <link rel="stylesheet" href="modal/modalstyle.css">
+  <script src="modal/modalscript.js"></script>
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <h1><strong>본 사이트는 개인 포트폴리오용으로 제작되었습니다.</strong></h1>
+        <p>
+          사이트에 대한 리소스는 원저작자에게 있습니다.<br>
+          해당 사이트 관련 문제 사항이 있으시면 아래 메일을 통해 연락해주시면 삭제하겠습니다.<br>
+          본 사이트는 Chrome 에 최적화되어 있습니다.</span>
+        </p>
+        <a href="mailto:ban8627@gmail.com" class="mail-bt">
+          <span>ban8627@gmail.com</span>
+          <i class="fas fa-envelope"></i>
+        </a>
+        <button class="modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
