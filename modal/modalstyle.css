@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -6,6 +7,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
@@ -27,25 +29,16 @@
   width: 100%;
   height: 100%;
 }
-.modal-close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: block;
-  width: 14px;
-  height: 14px;
-  background-color: transparent;
-  border: 0;
-  color: #b7b7b7;
-  cursor: pointer;
-}
+
 .modal-main {
   position: relative;
   border-radius: 15px;
   box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.7);
   width: 100%;
+  min-width: 480px;
   max-width: 800px;
   height: 100%;
+  min-height: 330px;
   max-height: 360px;
   text-align: center;
   background: #fff url("./caution.png") no-repeat;
@@ -57,25 +50,33 @@
 .modal-main h1 {
   font-size: 25px;
   font-weight: 900;
-  margin-top: 85px;
+  margin-top: 5vh;
   margin-bottom: 30px;
 }
+
 .modal-main p {
   font-size: 20px;
   line-height: 1.3em;
   font-weight: 500;
 }
+
+.visi {
+  display: none;
+}
+
 .mail-bt {
   position: relative;
-  margin-top: 70px;
+  margin-top: 50px;
   display: inline-block;
   font-size: 23px;
   font-weight: 700;
   color: #000;
+  transition: all 0.3s;
 }
-.mail-bt::after {
+
+.mail-bt::before {
   position: absolute;
-  bottom: -8px;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -83,4 +84,54 @@
   height: 2px;
   background-color: #000;
   content: "";
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 0;
+  color: #b7b7b7;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal-close::after {
+}
+
+@media all and (max-width: 850px) {
+  .modal-main {
+    width: 90vw;
+  }
+
+  .modal-main h1 {
+    margin-top: 5vh;
+    font-size: 3.125vw;
+  }
+
+  .modal-main p {
+    font-size: 2.5vw;
+  }
+
+  .mail-bt {
+    font-size: 2.88vw;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .modal-main h1 {
+    font-size: 20px;
+  }
+
+  .modal-main p {
+    font-size: 18px;
+  }
+
+  .modal-main .visi {
+    display: block;
+  }
 }

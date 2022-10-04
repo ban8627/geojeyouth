@@ -16,6 +16,6 @@ $(document).ready(function () {
   });
   modalWrap.click(() => {
     modalWrap.stop().fadeOut(100);
-    $("html").css("overflow", "hidden");
+    $("html").css("overflow", "auto");
   });
 });

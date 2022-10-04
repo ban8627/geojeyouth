@@ -13,6 +13,9 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   <!-- Swiper -->
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
@@ -441,26 +444,8 @@
             <h3>센터일정</h3>
             <a href="#" class="community-more">전체보기</a>
           </div>
-          <div class="community-main">
-            <div class="calendar-wrap">
-              <div class="calendar-head">
-                <button class="prev-month"></button>
-                <span class="calendar-date"></span>
-                <button class="next-month"></button>
-              </div>
-              <table class="calendar-body">
-                <thead>
-                  <th class="sun">일</th>
-                  <th>월</th>
-                  <th>화</th>
-                  <th>수</th>
-                  <th>목</th>
-                  <th>금</th>
-                  <th class="sat">토</th>
-                </thead>
-                <tbody class="calendar-body-wrap"></tbody>
-              </table>
-            </div>
+          <div class="community-main community-main-calendar">
+            <div id="datepicker"></div>
           </div>
         </div>
       </div>
